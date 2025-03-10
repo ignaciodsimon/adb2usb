@@ -1,6 +1,8 @@
 # adb2usb
 ADB to USB hardware interface for using old Apple keyboards on modern computers.
 
+![alt text](adb2usb.jpg)
+
 # Tools
 For the development of the firmware I used:
  - Compiler: Arduino 1.8.10 in OSX 10.15 (19A602) (Catalina)
