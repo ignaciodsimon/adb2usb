@@ -1,0 +1,23 @@
+Note by Joe, November 2019.
+
+These two files:
+
+	USBHID.cpp
+	USBHID.h
+
+were modified to add an overload of begin() that accepts the vendor, product, manufacturer ... IDs. I modified them in the directory:
+
+	/Users/myUser/Library/Arduino15/packages/stm32duino/hardware/STM32F1/2019.10.9/libraries/USBComposite
+
+Maybe there's a way of doing it without modifying these files, but this was just easy and fast.
+
+These file:
+
+	Keyboard.cpp
+
+Was modified to include two new functions:
+
+	pressKeycode()
+	releaseKeycode()
+
+That send directly the keycode, instead of accepting an ASCII character and converting it. It's useful for the more "special" keystrokes.
